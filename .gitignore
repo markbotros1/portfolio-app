@@ -23,4 +23,10 @@ dist-ssr
 *.sln
 *.sw?
 
+<<<<<<< HEAD
 api
+=======
+model-deployment/flask
+model-deployment/node
+model-deployment/scripts
+>>>>>>> 66ff3d7 (project upload)
