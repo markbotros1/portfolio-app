@@ -1,27 +1,18 @@
-# React + TypeScript + Vite
+portfolio-app
+============
+A web app to showcase some of my favorite projects
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![alt text](https://github.com/markbotros1/action-recognition/blob/main/resources/example.gif)
 
-Currently, two official plugins are available:
+Summary
+-------
+- Containerized project using Docker to recreate project env (including OpenCV, PyTorch, hugginface, etc...)
+- Uploaded data and Docker image to AWS S3 and ECR, respectively 
+- Finetuned pretrained ViViT model (from hugginface) on AWS EC2 GPU-enabled instance
+- Model based on [ViViT: A Video Vision Transformer](https://arxiv.org/abs/2103.15691)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Setup
+-----
+Assuming you have docker installed:
+1. Pull data from: https://www.kaggle.com/competitions/nfl-player-contact-detection/data
+2. Store data in project directory
