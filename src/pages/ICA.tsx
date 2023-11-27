@@ -13,8 +13,16 @@ const ICA = () => {
       <div className="text">
         <p className="heading">Image Captioning</p>
         <p>
-          A multimodal model that analyzes images and generates captions for
-          them
+          A multi-modal generative AI model that analyzes your images and
+          generates captions for them! To find more information about this
+          project (e.g., model architecture, implementation, training), you can
+          view the project{" "}
+          <a
+            href="https://www.github.com/markbotros1/image-captioning"
+            target="_blank"
+          >
+            on my Github
+          </a>
         </p>
       </div>
       <div className="demo">
