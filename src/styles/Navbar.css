@@ -1,0 +1,153 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 50px;
+  width: 600px;
+  margin: 50px auto;
+
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.85);
+  border-radius: 15px;
+  z-index: 1;
+}
+
+.pages {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+}
+
+#title {
+  width: 33.33%;
+  padding-left: 20px;
+
+  font-size: 22px;
+}
+
+.pages div:not(#title, #links) {
+  width: 16.66%;
+  text-align: center;
+}
+
+#links {
+  height: 100%;
+  margin-left: auto;
+  margin-right: 0;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border: 1px solid #282828;
+  background-color: rgba(196, 196, 196, 0.227);
+}
+
+.hamnav {
+  display: none;
+}
+
+@media (max-width: 625px) {
+  .nav {
+    display: none !important;
+  }
+
+  .hamnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    display: inline;
+    z-index: 1;
+  }
+
+  .hamburger1 {
+    background-color: rgba(0, 0, 0, 0.85);
+    height: 45px;
+
+    display: -ms-grid;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: right;
+    padding-top: 5px;
+    padding-right: 20px;
+    z-index: 120;
+  }
+
+  .hamburger1 div {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    width: 40px;
+    height: 5px;
+    margin-top: 7px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+
+  #toggle1 {
+    display: none;
+  }
+
+  #toggle1:checked + .hamburger1 .top {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    margin-top: 22.5px;
+  }
+
+  #toggle1:checked + .hamburger1 .meat {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin-top: -5px;
+  }
+
+  #toggle1:checked + .hamburger1 .bottom {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  #toggle1:checked ~ .menu1 {
+    height: auto;
+  }
+
+  .menu1 {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    margin: 0;
+    display: -ms-grid;
+    display: grid;
+    grid-template-rows: repeat(4, 0.1fr);
+    padding-top: 10px;
+    list-style: none;
+    clear: both;
+    width: auto;
+    text-align: center;
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.4s ease;
+    z-index: 120;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  .link1 {
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+  }
+
+  .link1:hover {
+    background-color: #fff;
+    color: rgb(61, 61, 61) !important;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+}
