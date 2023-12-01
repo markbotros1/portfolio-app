@@ -9,7 +9,10 @@ const Navbar = () => {
     <>
       <nav className="nav">
         <div className="pages">
-          <div id="title">Mark Botros</div>
+          <div id="title">
+            <img src="/resources/favicon.ico" />
+            <p>Mark Botros</p>
+          </div>
           <div>
             <Link to="/">home</Link>
           </div>

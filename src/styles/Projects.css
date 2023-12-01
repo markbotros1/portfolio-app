@@ -1,6 +1,6 @@
 .projects {
   width: 1000px;
-  margin: 175px auto;
+  margin: 100px auto;
 
   display: flex;
   flex-direction: column;
@@ -34,7 +34,7 @@
   background-color: rgba(223, 223, 223, 0.35);
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
   .projects {
     width: 100%;
     gap: 30px;
@@ -55,8 +55,8 @@
   }
 }
 
-@media (max-width: 625px) {
+@media (max-width: 650px) {
   .projects {
-    margin: 120px auto;
+    margin: 100px auto;
   }
 }
