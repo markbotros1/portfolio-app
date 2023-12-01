@@ -26,23 +26,18 @@
 
 #title {
   width: 33.33%;
-
+  padding-left: 10px;
+  font-size: 24px;
   display: flex;
   align-items: center;
 }
 
-#title img {
-  height: 40px;
-}
-
-#title p {
+/* #title {
   margin: 0 auto;
   padding-left: 8px;
 
   font-size: 24px;
-
-  flex: 1;
-}
+} */
 
 .pages div:not(#title, #links) {
   width: 16.66%;
