@@ -7,12 +7,11 @@ const Home = () => {
       <div className="text">
         <p className="heading"> 👋 Hi, thanks for stopping by!</p>
         <p>
-          I'm a recent graduate from Cornell University's College of Computing
-          and Information Science with a keen interest in full-stack software
-          engineering, data science & analytics, machine learning, and
-          generative AI (of course!). I've been working on a lot of independent
-          projects recently, and I built this website to showcase some of my
-          favorites.
+          I'm a current Data Scientist and recent(ish) graduate of Cornell
+          University's College of Computing and Information Science with a
+          passion for data science, machine learning, generative AI (of
+          course!). I've been working on a lot of independent projects recently,
+          and I built this website to showcase some of my favorites.
           <b> Feel free to head over to the projects page, and try them out!</b>
         </p>
       </div>
