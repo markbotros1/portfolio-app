@@ -9,7 +9,7 @@ interface ImageCaptionProps {
 
 const ImageUpload: React.FC<ImageCaptionProps> = ({ onCaptionGenerated }) => {
   const apiURL =
-    "https://vzxzwxiz4f.execute-api.us-east-1.amazonaws.com/Prod/compute";
+    "https://bxzkos97kh.execute-api.us-east-1.amazonaws.com/Prod/compute";
 
   const inputRef = useRef<HTMLInputElement>(null);
 

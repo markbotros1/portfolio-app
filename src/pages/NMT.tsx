@@ -4,7 +4,7 @@ import "../styles/Base.css";
 
 const NMT = () => {
   const apiURL =
-    "https://vzxzwxiz4f.execute-api.us-east-1.amazonaws.com/Prod/compute";
+    "https://bxzkos97kh.execute-api.us-east-1.amazonaws.com/Prod/compute";
 
   const [source, setSource] = useState("");
   const [output, setOutput] = useState("");

@@ -1,6 +1,7 @@
 --find-links https://download.pytorch.org/whl/torch_stable.html
 torch==2.0.0
 torchvision==0.15.1
+numpy<2.0.0
 pillow
 transformers
 streaming-form-data

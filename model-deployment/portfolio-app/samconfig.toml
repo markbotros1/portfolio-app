@@ -19,7 +19,7 @@ resolve_s3 = true
 resolve_image_repos = true
 s3_prefix = "portfolio-app"
 region = "us-east-1"
-parameter_overrides = "SecurityGroupIds=\"sg-0afac0290486f45ab\" SubnetID=\"subnet-002f2a336810e58b2\""
+parameter_overrides = "SecurityGroupIds=\"sg-03c265b9aa327adc0\" SubnetID=\"subnet-04fb2660ba22cdf04\""
 
 [default.package.parameters]
 resolve_s3 = true

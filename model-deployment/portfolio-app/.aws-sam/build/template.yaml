@@ -3,7 +3,7 @@ Transform: AWS::Serverless-2016-10-31
 Globals:
   Function:
     Timeout: 300
-    MemorySize: 5000
+    MemorySize: 3008
     Environment:
       Variables:
         MODEL_DIR_TRANSLATE: /mnt/ml/translate/
@@ -17,11 +17,11 @@ Globals:
 Parameters:
   SecurityGroupIds:
     Type: String
-    Default: sg-0afac0290486f45ab
+    Default: sg-03c265b9aa327adc0
   SubnetID:
     Type: String
     Description: Subnet ID (default VPC)
-    Default: subnet-002f2a336810e58b2
+    Default: subnet-04fb2660ba22cdf04
 Resources:
   EfsFileSystem:
     Type: AWS::EFS::FileSystem
@@ -78,7 +78,7 @@ Resources:
             Method: post
       ImageUri: inferencefunction:python3.11-v1
     Metadata:
-      DockerContext: /Users/markbotros/Documents/model-deployment/portfolio-app/app
+      DockerContext: /Users/markbotros/Documents/portfolio-app/model-deployment/portfolio-app/app
       DockerTag: python3.11-v1
       Dockerfile: Dockerfile
       SamResourceId: InferenceFunction
