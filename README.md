@@ -2,7 +2,8 @@ portfolio-app
 ============
 A web app to showcase some of my favorite projects
 
-[Check it out!](https://markbotros1.github.io/portfolio-app/)
+Site is no longer active, check back later for updated version. 
+<!-- [Check it out!](https://markbotros1.github.io/portfolio-app/) -->
 
 Summary
 -------
